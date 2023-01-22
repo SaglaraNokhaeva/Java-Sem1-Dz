@@ -8,21 +8,27 @@ public class Ex_three {
         Scanner iScanner = new Scanner(System.in);
 
         System.out.printf("Введите первое число = ");
-        int number1 = iScanner.nextInt();
+        float number1 = iScanner.nextInt();
 
         System.out.printf("Введите второе число = ");
-        int number2 = iScanner.nextInt();
+        float number2 = iScanner.nextInt();
 
-       
         System.out.printf("Введите действие (+, -, * или /): ");
-        String act = iScanner.next();
+        Character act = iScanner.next().charAt(0);
 
-        if (act == "+") {
-            // int sum=number1+number2;
-            // System.out.print(act);
-            System.out.print(number2);
+        if (act == '+') {
+            System.out.printf("%f + %f = %f", number1, number2, number1 + number2);
         }
-        System.out.print(act);
+
+        if (act == '-') {
+            System.out.printf("%f - %f = %f", number1, number2, number1 - number2);
+        }
+        if (act == '*') {  
+            System.out.printf("%f * %f = %f",number1,number2,number1*number2);
+        }
+        if (act == '/') {  
+            System.out.printf("%f : %f = %f",number1,number2,number1/number2);
+        }
         iScanner.close();
     }
 }
