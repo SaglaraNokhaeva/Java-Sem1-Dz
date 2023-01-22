@@ -23,11 +23,11 @@ public class Ex_three {
         if (act == '-') {
             System.out.printf("%f - %f = %f", number1, number2, number1 - number2);
         }
-        if (act == '*') {  
-            System.out.printf("%f * %f = %f",number1,number2,number1*number2);
+        if (act == '*') {
+            System.out.printf("%f * %f = %f", number1, number2, number1 * number2);
         }
-        if (act == '/') {  
-            System.out.printf("%f : %f = %f",number1,number2,number1/number2);
+        if (act == '/') {
+            System.out.printf("%f : %f = %f", number1, number2, number1 / number2);
         }
         iScanner.close();
     }
